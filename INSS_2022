@@ -1,0 +1,47 @@
+#include <stdlib.h>
+#include <stdio.h>
+
+
+
+int main()
+{
+    float salario;
+    float desconto;
+    
+    printf("Informe o seu valor do seu salário: ");
+    scanf("%f", &salario);
+    
+    if(salario < 1212){
+        
+        desconto = salario * 0.075;
+ 
+    }
+    else if(salario > 1212.01 && salario < 2427.35){
+        
+        desconto = (salario - 1212.01) * 0.09 + 90.90;
+        
+    }
+    else if (salario > 2427.36 && salario < 3641.03) {
+        
+        desconto = (salario - 2427.36) * 0.12 + 200.28; // 1ª faixa = 90.90; 2ª faixa = 109.38;
+        
+    }
+    
+    else if (salario > 3641.04 && salario < 7087.22){
+        
+        desconto = (salario - 3641.04) * 0.14 + 345.92; // 1ª faixa = 90.90; 2ª faixa = 109.38; 3ª faixa = 145.64;
+        
+    }
+    
+    else {
+        
+        desconto = (7087.22 - 3641.04 ) * 0.14 + 828.38; // 1ª faixa = 90.90; 2ª faixa = 109.38; 3ª faixa = 145.64; 4ª faixa = 482.46;
+        
+    }
+    
+        printf("O valor do salário bruto eh: %.2f\n", salario);
+        printf("O valor do INSS descontado eh: %.2f\n", desconto);
+        printf("O valor do sálario líquido eh: %.2f\n", salario - desconto);
+
+   return 0;
+}
