@@ -35,7 +35,7 @@ int main()
     
     else {
         
-        desconto = (7087.22 - 3641.04 ) * 0.14 + 828.38; // 1ª faixa = 90.90; 2ª faixa = 109.38; 3ª faixa = 145.64; 4ª faixa = 482.46;
+        desconto = 828.38; // 1ª faixa = 90.90; 2ª faixa = 109.38; 3ª faixa = 145.64; 4ª faixa = 482.46;
         
     }
     
